@@ -1,7 +1,9 @@
-#include "Vehicle.h"
+#include "AbstractVehicle.h"
 #include <string>
+#include <iostream>
 using namespace std;
 
-std::string Vehicle::getString() {
+string AbstractVehicle::getString() {
     return "Brand: " + this->brand + " Year: " + to_string(this->yearOfRegistration);
 }
+

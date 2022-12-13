@@ -7,12 +7,25 @@ using namespace std;
 
 
 
+/*namespace vehicles {
+
+    int main(int argc,char **argv)
+    {
+        Car car("Tesla", 2022, true);
+        
+        cout << car.getString();
+        //car.makeNoise();
+
+        return 0;
+    }
+}*/
 
 int main()
 {
-    Car car("Tesla", 2022, true);
+     Car car("Tesla", 2022, true);
+        
+        cout << car.getString();
+        //car.makeNoise();
 
-    cout << car.getString();
-
-    return 0;
+        return 0;
 }

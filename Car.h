@@ -3,11 +3,10 @@
 
 #include <iostream>
 #include <string>
-#include "Vehicle.h"
+#include "AbstractVehicle.h"
 using namespace std;
 
-
-class Car : public Vehicle {
+    class Car : public AbstractVehicle {
 
     private:
         bool isTaxi;
@@ -17,6 +16,8 @@ class Car : public Vehicle {
 
         string getString();
 
+        void makeNoise() override;
+
         ~Car();
-};
+    };
 

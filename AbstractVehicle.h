@@ -2,14 +2,16 @@
 #include <string>
 using namespace std;
 
-
-class Vehicle
-{
+    class AbstractVehicle
+    {
     protected:
         string brand;
         int yearOfRegistration;
-    
+
     public:
         string getString();
-};
+
+        // abstract function
+        virtual void makeNoise() = 0;
+    };
 
